@@ -1,0 +1,7 @@
+body {
+    background-color: lightblue;
+}
+
+header {
+    background-image: url("{{ asset('img/restaurant.png') }}");
+}
