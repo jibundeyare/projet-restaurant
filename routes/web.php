@@ -1,5 +1,8 @@
 <?php
 
+use App\Http\Controllers\CarteController;
+use App\Http\Controllers\ContactController;
+use App\Http\Controllers\HomeController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,12 +16,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    // charge la page home.blade.php
-    return view('home');
-})->name('home');
+Route::get('/', [HomeController::class, 'index'])->name('home');
 
-Route::get('/contact', function () {
-    // charge la page contact.blade.php
-    return view('contact');
-})->name('contact');
+Route::get('/contact', [ContactController::class, 'index'])->name('contact');
+
+Route::get('/carte', [CarteController::class, 'index'])->name('carte');

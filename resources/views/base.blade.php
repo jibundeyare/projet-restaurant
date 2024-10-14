@@ -15,7 +15,7 @@
         <nav>
             <ul>
                 <li><a href="{{ route('home') }}">Accueil</a></li>
-                <li><a href="#">Plats</a></li>
+                <li><a href="{{ route('carte')}}">Carte</a></li>
                 <li><a href="{{ route('contact') }}">Contact</a></li>
             </ul>
         </nav>
