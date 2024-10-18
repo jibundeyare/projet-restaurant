@@ -1,6 +1,10 @@
 @extends('base')
 
 @section('content')
-<h1>Accueil</h1>
-<p>Hello Laravel!</p>
+<h1>{{ $title }}</h1>
+
+<h2>{{ $actu->titre }}</h2>
+<div>{{ $actu->image }}</div>
+<p>{{ $actu->message }}</p>
+<p>{{ $actu->date_publication }}</p>
 @endsection
