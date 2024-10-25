@@ -16,7 +16,7 @@ class TestSeeder extends Seeder
         $sql = file_get_contents(__DIR__.'/actus.sql');
         DB::unprepared($sql);
 
-        $sql = file_get_contents(__DIR__.'/contact.sql');
+        $sql = file_get_contents(__DIR__.'/contacts.sql');
         DB::unprepared($sql);
     }
 }
